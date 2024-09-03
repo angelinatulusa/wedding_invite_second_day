@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Party</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+            </div>
+
+            <div class="greeting">
+                <h3>Друзья!</h3>
+                <p>Приглашаем Вас продолжить празднование в более тесном кругу и непринужденной обстановке</p>
+                <p>Вечеринка у бассейна состоится 9 сентября в 15:00</p>
+            </div>
+                       
+                <div class="dresscode">
+                    <h3>Дресс-код:</h3>
+                    <p>Пляжное настроение</p>
+                        <p>Яркие цвета, цветочные принты, футболки, шорты, топы, сарафаны, бермуды</p>
+                        <p style="font-weight: bold;">Обязательно, берите с собой купальники и хорошее настроение! &#128513;</p>
+                </div>
+                    <div class="slider" id="slider">
+                        <div><img src="img/slide1.jpg"></div>
+                        <div><img src="img/slide2.jpg"></div>
+                        <div><img src="img/slide3.jpg"></div>
+                        <div><img src="img/slide4.jpg"></div>
+                        <div><img src="img/slide5.jpg"></div>
+                        <div><img src="img/slide6.jpg"></div>        
+                        <div><img src="img/slide7.jpg"></div>
+                    </div>
+
+            <div class="map">
+                <h3>Где?</h3>
+                    <div class="map-container">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7662cc99d3543532ae2804b598774f4afe3f0cf20e8d2665bc187a30615adecf&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>                    
+                        <p>Ставропольский край,<br>Новоблагодарное, ул. Победы, 9 <br> База отдыха &laquo;4 Сезона&raquo;, дом 1</p>
+                    </div>
+            
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+    $('#slider').slick({
+        Infinity: true,
+        prevArrow: '<div class="slick-btn-own slick-prev">❮</div>',
+        nextArrow: '<div class="slick-btn-own slick-next">❯</div>',
+    });
+
+    $(document).ready(function() {
+        $("#open-create-user").click(function() {
+            $("#user-modal").fadeIn(200);
+        });
+
+        $(".close").click(function() {
+            $("#user-modal").fadeOut(200);
+        });
+    });
+</script>
+
+<script>
+    $('#slider2').slick({
+        Infinity: true,
+        prevArrow: '<div class="slick-btn-own slick-prev">❮</div>',
+        nextArrow: '<div class="slick-btn-own slick-next">❯</div>',
+    });
+
+    $(document).ready(function() {
+        $("#open-create-user").click(function() {
+            $("#user-modal").fadeIn(200);
+        });
+
+        $(".close").click(function() {
+            $("#user-modal").fadeOut(200);
+        });
+    });
+</script>
+
+</body>
+</html>
